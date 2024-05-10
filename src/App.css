@@ -1,0 +1,92 @@
+.tab-sec {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo {
+  width: 320px;
+  margin-top: 1rem;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 400px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.tabs .btn-sec {
+  background-color: #d4d4d4;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.tabs .btn-sec:hover {
+  background-color: black;
+  color: white;
+}
+
+.content p {
+  font-size: 1rem;
+  color: rgb(31, 31, 31);
+}
+
+.topic-discrip {
+  padding: 10px;
+  overflow: auto;
+}
+
+.topic-discrip::-webkit-scrollbar {
+  width: 5px;
+}
+
+.topic-discrip::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+@media screen and (max-width : 600px) {
+  .tab-sec{
+    width: 100%;
+  }
+  .tabs .btn-sec{
+    height: 35px;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .logo{
+    width: 250px;
+    height: 250px;
+  }
+}
